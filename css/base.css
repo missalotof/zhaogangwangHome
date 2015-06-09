@@ -1,0 +1,40 @@
+@charset "utf-8";
+html
+{
+    overflow-x:auto;
+    overflow-y:auto;
+}
+body{
+    background:#fff;
+    font-size:12px;
+    font-family:"Microsoft YaHei","微软雅黑";
+    width:100%;
+    margin:0;
+    padding:0;
+    -webkit-text-size-adjust:none;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, img {
+    margin:0;
+    padding:0;
+}
+input, textarea { font-family:"Microsoft YaHei","微软雅黑";}
+img { border:0; }
+ol, ul, li { list-style:none; }
+a{ text-decoration:none;}
+a:hover{ text-decoration:underline;}
+
+.clearfix:after { content: '\20'; display: block; height: 0; clear: both }
+.clearfix { zoom: 1 }
+
+.w1000{ position:relative; width:1000px; margin:0 auto;}
+
+.red{ color:#F50000;}
+.green{ color:#339900;}
+.blue{ color:#317ee7;}
+.gray{ color:#666;}
+.black{ color:#333;}
+.orange{ color:#f30;}
+.remove{ text-decoration:line-through;}
+
+.fl{ float:left;}
+.fr{ float:right;}
