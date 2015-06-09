@@ -1,15 +1,3 @@
-
-.toptip { height:70px; line-height:70px; color:#fff; font-size:26px;}
-.toptip .winner{ display:block; height:70px;}
-.toptip .close{ position:absolute; right:22px; top:22px; width:26px; height:26px; background:url(img/X.png) no-repeat;}
-.toptip .img{ float:left; display:inline; width:229px; height:70px; background:url(img/img.jpg) no-repeat;}
-.toptip .time{ float:left; display:inline; width:281px; height:41px; margin:14px 0 0 35px; padding:0 0 0 113px; background:url(../img/timebg.png) no-repeat;}
-.toptip .time span{ float:left; display:inline-block; width:38px; height:41px; margin:0 32px 0 0; line-height:41px; background:url(../imag/buy_time.png) no-repeat; color:#fff; text-indent:3px; letter-spacing:7px; font-size:21px;}
-.toptip .text{ float:right; display:inline; width:300px; margin:18px 0 0; line-height:18px; font-size:12px;}
-.toptip .text span{ color:#fffc04;}
-.toptip .text a{ color:#fff; text-decoration:underline;}
-.toptip .text a:hover{ text-decoration:none;}
-
 .topbar{ width:100%; height:28px; border-bottom:1px solid #e8e8e8; background:#f6f6f6; color:#666; zoom:1;}
 .topbar.fixed6{ position:fixed; _position:relative; top:0; margin:0; border-bottom:1px solid #ccc; z-index: 11;}
 
@@ -42,7 +30,7 @@
 .topbar .topmenu .find .find_no{ padding:10px 20px;}
 .topbar .topmenu .find .find_no input{ width:70px; height:20px; margin:0 0 0 30px; padding:0; border:0; border-radius:2px; line-height:20px; background:#f50; outline:none; font-size:12px; color:#fff; cursor:pointer;}
 .topbar .topmenu .find .find_yes h3{ padding:0 20px; font-size:12px; font-weight:normal; color:#4d4d4d;}
-.topbar .topmenu .find .find_yes a{ display:block; width:260px; height:26px; padding:0 20px; line-height:26px; color:##3a83e8;}
+.topbar .topmenu .find .find_yes a{ display:block; width:260px; height:26px; padding:0 20px; line-height:26px; color:#3a83e8;}
 .topbar .topmenu .find .find_yes a span{ float:right; color:#f50000;}
 .topbar .topmenu .find .find_yes .button{ padding:5px 0; border-top:1px dashed #ccc;}
 .topbar .topmenu .find .find_yes .button input{ width:110px; height:20px; margin:0 0 0 170px; padding:0; border:0; border-radius:2px; line-height:20px; background:#f50; outline:none; font-size:12px; color:#fff; cursor:pointer;}
@@ -50,130 +38,5 @@
 .topbar .topmenu ul li.line{ padding:0; _height:18px; _margin:0; _line-height:18px; color:#ccc;}
 .topbar .topmenu ul li span{ margin:0 0 0 10px;}
 
-.topbar .toppanel{ position:absolute; right:0; top:30px; width:210px; padding:5px 15px; border:1px solid #ccc; background:#fdffea;}
-.topbar .toppanel .close{ position:absolute; right:15px; top:10px; width:10px; height:10px; background:url(../img/zg_icon1.png) no-repeat -212px -126px; overflow:hidden;}
-.topbar .toppanel li{ line-height:30px;}
-.topbar .toppanel li span{ display:inline-block; width:35px; color:#f50000;}
-.topbar .toppanel li b{ display:inline-block; width:110px; font-weight:normal; color:#3f3f3f;}
-.topbar .toppanel li a{ color:#317ee7; text-decoration:underline;}
 
-.foot{ height:119px; padding:25px 0 0; border-top:1px solid #ddd; text-align:center;}
-.foot .link{ color:#666;}
-.foot .link a{ color:#666;}
-.foot .link a:hover{ color:#f60;}
-.foot .text{ padding:10px 0 0; color:#666;}
-
-
-.dialog_login{}
-.dialog_login h2{ width:380px; padding:12px 0; border-bottom:1px solid #ddd; color:#666; font-size:14px; text-indent:20px;}
-.dialog_login .icon_tip{ display:inline-block; width:14px; height:14px; margin:0 5px 0 0; background:url(../img/zg_icon.png) no-repeat -24px 0; vertical-align:-2px; *vertical-align:2px; overflow:hidden;}
-.dialog_login .user{ position:relative; margin:20px 0 0 0; background:#fff;}
-.dialog_login .password{ position:relative; margin:25px 0 0 0; background:#fff;}
-.dialog_login .user .fail,
-.dialog_login .code{ position:relative; margin:25px 0 0 0; background:#fff;}
-.dialog_login .password .fail{ position:absolute; top:38px; _top:39px; left:84px; _left:87px; width:205px; height:17px; padding:3px 0 0 5px; border:1px solid #fcbdbd; border-top:0; line-height:12px; background:#ffebeb; color:#f94100;}
-.dialog_login .user label,
-.dialog_login .code label,
-.dialog_login .password label{ float:left; display:inline-block; width:80px; height:38px; line-height:38px; text-align:right; font-weight:bold; color:#333;}
-.dialog_login .user input,
-.dialog_login .code input,
-.dialog_login .password input{ float:left; width:194px; height:18px; margin:0; padding:9px 8px; border:1px solid #ddd; background:#fff; line-height:18px; outline:none;}
-.dialog_login .code input{ width:70px;}
-.dialog_login .user input.user_icon{ background:url(../img/input_cion.png) no-repeat 192px -36px;}
-.dialog_login .password input.password_icon{ background:url(../img/input_cion.png) no-repeat 192px 2px;}
-.dialog_login .code .img{ float:left; display:inline-block; width:69px; height:38px; margin:0 0 0 5px;}
-.dialog_login .code .img img{ display:block;}
-.dialog_login .code .txt{ float:left; display:inline-block; width:55px; line-height:19px; text-align:center;}
-.dialog_login .code .txt span{ display:block; color:#999;}
-.dialog_login .code .txt a{ color:#317ee7;}
-.dialog_login .link{ width:212px; padding:25px 0 0 84px;}
-.dialog_login .link input{ vertical-align:-2px;}
-.dialog_login .link a{ float:right; display:inline; color:#3a83e8;}
-.dialog_login .link a:hover{ text-decoration:underline;}
-.dialog_login .btn{ position:relative; margin:15px 0 0; padding:0 0 35px 80px;}
-.dialog_login .btn input{ width:212px; height:36px; border:none; line-height:36px; border-radius:3px; background:#f50; text-align:center; font-size:16px; font-weight:bold; color:#fff; cursor:pointer;}
-.dialog_login .btn input:hover{ color:#eee;}
-.dialog_login .fail{ position:absolute; top:44px; left:80px; _left:0; height:27px; line-height:12px; color:#f94100;}
-.dialog_login .other{ padding:10px 0 0 80px; border-top:1px dotted #ddd; color:#999;}
-.dialog_login .other .qq{ display:inline-block; width:76px; height:24px; margin:0 15px 0 0; background:url(../img/qq.png) no-repeat; vertical-align:middle;}
-.dialog_login .other a{ color:#3a83e8;}
-.dialog_login .other a:hover{ text-decoration:underline;}
-
-
-
-.pub_page{ float:right; height:22px; padding:15px 10px 0 300px; color:#777; line-height:22px;}
-.pub_page .total{ float:left; display:inline-block; width:60px; margin:0 15px;}
-.pub_page .item{ float:left; display:inline-block; height:20px; line-height:20px; border:1px solid #e3e3e3; margin-right:9px; color:#777; text-align:center; text-decoration:none; padding:0 8px;}
-.pub_page .item:hover{ text-align:center; height:20px; line-height:20px; border:1px solid #e3e3e3; margin-right:9px; color:#5397cc; color:#777; text-decoration:none;}
-.pub_page .prev{ float:left; display:inline-block; text-align:center; height:20px; line-height:20px; border:1px solid #e3e3e3; margin-right:9px; color:#777; text-decoration:none; padding:0 8px;}
-.pub_page .prev_no{ float:left; display:inline-block; text-align:center; height:20px; line-height:20px; border:1px solid #e3e3e3; margin-right:9px; color:#777; text-decoration:none; padding:0 8px; background:#e3e3e3;}
-.pub_page .next{ float:left; display:inline-block; text-align:center; height:20px; line-height:20px; border:1px solid #e3e3e3; margin-right:9px; color:#777; text-decoration:none; padding:0 8px;}
-.pub_page .next_no{ float:left; display:inline-block; text-align:center; height:20px; line-height:20px; border:1px solid #e3e3e3; margin-right:9px; color:#777; text-decoration:none; padding:0 8px; background:#e3e3e3;}
-.pub_page .go-text{ float:left; display:inline-block; width:120px; height:20px; line-height:20px; margin-right:9px; color:#777;}
-.pub_page .current{ margin-left: 0px;display:block; float:left; text-align:center; height:20px; padding:0 8px; line-height:20px; border:1px solid #317ee7; margin-right:9px; color:#5397cc; color:#fff; background:#317ee7; text-decoration:none;}
-.pub_page .text{ width:50px; height:20px; margin:0 5px; padding:0; border:1px solid #e3e3e3; vertical-align:-1px; *vertical-align:-4px; text-align:center;}
-.pub_page .btn-go{ float:left; display:inline-block; width:40px; height:20px; border:1px solid #e3e3e3; line-height:20px; background:#f3f3f3; color:#777; text-align:center; font-size:12px;}
-
-.crumbs{ height:40px; line-height:40px; color:#3a83e8;}
-.crumbs a{ color:#3a83e8;}
-.crumbs b{ margin:0 10px;}
-.crumbs span{ color:#4d4d4d;}
-
-.cart_fixed{ position:fixed; top:179px; _position:absolute; _top:expression(eval(document.documentElement.scrollTop + 93)); left:50%; margin-left:515px;}
-.cart_fixed.pickup{ top:290px; _top:expression(eval(document.documentElement.scrollTop + 73));}
-.cart_fixed.orderup{ top:200px; _top:expression(eval(document.documentElement.scrollTop + 73));}
-.cart_fixed.orderpay{ top:450px; _top:expression(eval(document.documentElement.scrollTop + 73));}
-.cart_fixed .proposal{ text-align:center;}
-.cart_fixed .proposal a{ display:block; width:20px; padding:10px 0; border:1px solid #ddd; border-radius:3px; background:#e4e4e4; color:#777;}
-.cart_fixed .proposal a:hover{ background:#3A83E8; color:#fff; text-decoration:none;}
-.cart_fixed .num{ position:relative; margin:15px 0 0;}
-.cart_fixed .num a{ display:block; width:22px; height:22px; background:url(../img/zg_icon.png) no-repeat -142px -92px;}
-.cart_fixed .num .icon_tip{ position:absolute; top:-9px; left:12px; display:block; width:17px; height:17px; line-height:17px; background:url(../img/zg_icon.png) no-repeat -42px -124px; text-align:center; color:#fff;}
-.cart_fixed .num .list{ position:absolute; left:-140px; top:23px; width:140px; padding:10px; border:1px solid #ccc; box-shadow:2px 2px 5px #999; background:#fff;}
-.cart_fixed .num .list ul li{ color:#7b7b7b; text-align:right; line-height:28px;}
-.cart_fixed .num .list ul li h4{ font-size:14px; color:#4d4d4d;}
-.cart_fixed .num .list ul li span{ margin:0 5px;}
-.cart_fixed .num .list ul li h5{ display:inline; margin:0 15px; font-size:28px; color:#f50000; font-weight:normal;}
-.cart_fixed .num .list ul li.line{ padding:10px 0 5px; border-top:1px solid #ccc;}
-.cart_fixed .num .list ul li.btn input{ width:140px; height:20px; border:none; line-height:20px; background:#3a83e8; text-align:center; font-size:12px; color:#fff; cursor:pointer;}
-
-
-.collect{ padding:0 0 40px;}
-.collect h2{ margin:20px 0; font-size:16px; color:#4d4d4d; font-weight:normal;}
-.collect .textarea{ width:730px; height:270px; padding:5px; border:1px solid #c1c1c1; background:#fff;}
-.collect .list{ border:1px solid #e3e3e3; background:#f3f3f3;}
-.collect .tip{ margin:0 0 0 20px; font-size:14px; line-height:36px; color:#666;}
-.collect .img{ width:69px; height:36px; margin:0 0 0 5px;}
-.collect .img img{ display:block;}
-.collect .txt{ width:55px; line-height:19px; text-align:center;}
-.collect .txt span{ display:block; color:#999;}
-.collect .txt a{ color:#317ee7;}
-.collect .success{ padding:150px 0 200px 300px;}
-.collect .success .icon_success{ float:left; display:inline-block; width:64px; height:64px; margin:0 20px 0 0; background:url(../img/zg_icon.png) no-repeat 0 -36px;}
-.collect .success .text{ float:left; display:inline; width:500px;}
-.collect .success .text h3{ margin:15px 0 15px; font-size:24px; color:#333; font-weight:normal;}
-.collect .success .text p{ line-height:24px; font-size:14px; color:#666;}
-.collect .success .text a{ display:block; width:82px; height:32px; margin:10px 0 0; line-height:32px; background:#317EE7; font-size:14px; color:#fff; text-align:center;}
-
-
-.ie11 .bill_excel,
-.ie11 .bill .helpme .text textarea,
-.ie11 .index_banner .board,
-.ie11 .index_content .helpme .text textarea,
-.ie11 .index_fixed .option ul li .big_code,
-.ie11 .ui-tooltip,
-.ie11 .mall_head.fixed,
-.ie11 .mall_head .city .list,
-.ie11 .mall_head .city .tip,
-.ie11 .mall_head .right .carticon .cartinfo,
-.ie11 .menu_ul,
-.ie11 .menu .item.active,
-.ie11 .menu ul li .info,
-.ie11 .mall_content .select_new .list .group .center,
-.ie11 .mall_content .select_new .open .group .center,
-.ie11 .mall_count,
-.ie11 .mall_total,
-.ie11 .cart_fixed .num .list,
-.ie11 .vip,
-.ie11 .fancybox-opened .fancybox-skin{ box-shadow:none;}
 

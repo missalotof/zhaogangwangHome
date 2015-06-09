@@ -168,18 +168,19 @@ function mall_side_box_foot_list_five_btn(d){
 var index = 0;
 var body_list_index = 0;
 function float_board_body_listBtn_time_engine(){
+
     var show_array = $("#basicPriceList")[0].childNodes;
     var array = $(".list_btn")[0].childNodes;
+    console.log('1111111');
     body_listBtn_takeTurn(index,array,show_array);
+    console.log('22222');
     if(index == array.length - 1)
         index = 0;
     else
         index ++;
-
-
-
 }
 function body_listBtn_takeTurn(index,array,show_array){
+    console.log('333333333');
     for(var i = 0;i < array.length;i ++)
     {
         if(i == index)
@@ -198,10 +199,10 @@ function body_listBtn_takeTurn(index,array,show_array){
 
 
 function float_board_body_list_time_engine(a_index){
-    if(a_index == -1)
-    {
-        a_index = 3;
-    }
+    //if(a_index == -1)
+    //{
+    //    a_index = 3;
+    //}
     var body_list_show_array = $("#basicPriceList")[0].childNodes[a_index].childNodes;
     for(var i = 0;i < body_list_show_array.length;i ++)
     {
@@ -409,8 +410,21 @@ $().ready(function(){
     index_content_item_left_mouseOver(1);
     index_content_item_left_mouseOver(2);
     index_content_item_left_mouseOver(3);
-
-
+    //float_board_body_listBtn_time_engine();
+    setTimeout(function (){
+        float_board_body_listBtn_time_engine();
+        setTimeout(arguments.callee, 5000);
+    }, 1000);
+    //float_board_body_list_time_engine((index-1));
+    var item_index = 0;
+    setTimeout(function (){
+        float_board_body_list_time_engine((item_index));
+        if(item_index == 3)
+            item_index = 0;
+        else
+            item_index ++;
+        setTimeout(arguments.callee, 1000);
+    }, 1000);
     var index_content_clear_scroll = setInterval('index_content_Scroll("#dealRecordList")',700);
     $('#dealRecordList')[0].onmouseover = function(){
         clearInterval(index_content_clear_scroll)
@@ -434,5 +448,6 @@ $().ready(function(){
     index_content_item_right_prev(1);
     index_content_item_right_prev(2);
     index_content_item_right_prev(3);
+
 
 });

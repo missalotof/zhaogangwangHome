@@ -250,7 +250,7 @@
 .index_fixed .option ul li .icon_goods{ position:absolute; left:10px; top:6px; width:37px; height:30px; background:url(../img/zg_icon.png) no-repeat -211px -235px; overflow:hidden;}
 .index_fixed .option ul li .icon_code{ position:absolute; left:11px; top:2px; width:38px; height:38px; background:url(../img/zg_icon.png) no-repeat -194px -269px; overflow:hidden;}
 .index_fixed .option ul li .icon_code.active{ background-position:-195px -496px;}
-.index_fixed .option ul li .big_code{ position:absolute; left:-118px; top:0; width:118px; height:136px; border:1px solid #ccc; box-shadow:0 0 4px #eee; background:     overflow:hidden;}
+.index_fixed .option ul li .big_code{ position:absolute; left:-118px; top:0; width:118px; height:136px; border:1px solid #ccc; box-shadow:0 0 4px #eee;overflow:hidden;}
 .index_fixed .gotop{ margin:5px 0 0;}
 .index_fixed .gotop a{ display:block; width:60px; height:22px; line-height:22px; background:url(../img/zg_icon.png) no-repeat -159px -333px; overflow:hidden; text-align:center; color:#fff;}
 .index_fixed .gotop a:hover{ text-decoration:none;}
@@ -282,8 +282,3 @@ table {
     height: 231px;
 }
 
-.dialog_code .captcha {
-    float: left;
-    margin-right: 10px;
-    cursor: pointer;
-}
