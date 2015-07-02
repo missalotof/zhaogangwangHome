@@ -505,6 +505,8 @@ function float_board_mouseover_mouseout(){
     float_board_body_list_btn_scroll_engine();
     var body_list_scroll = setInterval('float_board_vertical_scroll_engine(index-1)',3000);
     var body_btn_scroll = setInterval('float_board_body_list_btn_scroll_engine()',15000);
+    //clearInterval(body_list_scroll);
+    //clearInterval(body_btn_scroll);
 
     $('#basicPriceList')[0].onmouseover = function(){
         clearInterval(body_list_scroll);
@@ -516,8 +518,49 @@ function float_board_mouseover_mouseout(){
     }
 }
 //////////////////////////////////////////////
+//鼠标移入横向切换、纵向切换事件
+function float_board_bodyradio_mouseover(num){
+    var array = $('.list_btn a');
 
+    $('.list_btn a')[num].onmouseover = function(){
+        for(var i = 0;i < array.length;i ++){
+            if(i == num){
+                $('.board .list ul')[num].style.display = "block";
+                $($('.list_btn a')[num]).addClass("active");
+            }
+            else{
+                $('.board .list ul')[i].style.display = "none";
+                $($('.list_btn a')[i]).removeClass("active");
+            }
+        }
+    }
+}
+function float_board_body_mouseover(body_num){
 
+    var     array = $('.board .list ul')[body_num].childNodes;
+    body_list(array,body_num,0);
+    body_list(array,body_num,1);
+    body_list(array,body_num,2);
+    body_list(array,body_num,3);
+    body_list(array,body_num,4);
+}
+function body_list(array,body_num,body_list_num){
+    $('.board .list ul')[body_num].childNodes[body_list_num].onmouseover = function(){
+
+        for(var i = 0;i < array.length;i ++){
+            if(i  == body_list_num){
+                $('.board .list ul')[body_num].childNodes[i].setAttribute("style","height:164px");
+                $('.board .list ul')[body_num].childNodes[i].childNodes[1].style.cssText = ("display:block");
+                $('.board .list ul')[body_num].childNodes[i].childNodes[0].style.cssText = ("display:none");
+            }
+            else{
+                $('.board .list ul')[body_num].childNodes[i].setAttribute("style","height:36px");
+                $('.board .list ul')[body_num].childNodes[i].childNodes[1].style.cssText = ("display:none");
+                $('.board .list ul')[body_num].childNodes[i].childNodes[0].style.cssText = ("display:bloc");
+            }
+        }
+    };
+}
 
 
 
@@ -593,5 +636,15 @@ $().ready(function(){
     index_content_item_prev_next_click(2);
     index_content_item_prev_next_click(3);
     index_content_item_prev_next_click(4);
+
+    //功能模块：index_banner浮窗鼠标移入事件
+    float_board_bodyradio_mouseover(0);
+    float_board_bodyradio_mouseover(1);
+    float_board_bodyradio_mouseover(2);
+    float_board_bodyradio_mouseover(3);
+    float_board_body_mouseover(0);
+    float_board_body_mouseover(1);
+    float_board_body_mouseover(2);
+    float_board_body_mouseover(3);
 
 });
